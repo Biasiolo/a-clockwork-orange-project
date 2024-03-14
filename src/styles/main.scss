@@ -26,12 +26,12 @@ body {
 
 /* Hero Section */
 .hero {
-  background-image: url('../images/back2.png'); /* Adicione a imagem de fundo desejada */
+  background-image: url('../images/back5.png'); 
   color: #ff8d00;
   text-align: center;
   padding: 100px 0;
-  background-size: contain; /* Exibir a imagem de fundo de forma que ela cubra todo o conteúdo */
-  background-repeat: no-repeat; /* Evita que a imagem se repita */
+  background-size: contain; 
+  background-repeat: no-repeat;
   background-position: center;
   min-height: 70vh;
   margin: 0 auto;
@@ -52,6 +52,14 @@ body {
 }
 
 
+@media (max-width: 767px) {
+  .hero {
+    background-image: url('../images/back5.png'); 
+    background-size:auto;
+    background-position: right;
+  }
+}
+
   .section-video {
     position: relative;
     width: 100%;
@@ -62,9 +70,9 @@ body {
     overflow: hidden;
     margin-top: 2.4rem;
     justify-content: center;
-    background-image: url('../images/ban.png'); /* Adicione a imagem de fundo desejada */
-    background-size: cover; /* Exibir a imagem de fundo de forma que ela cubra todo o conteúdo */
-    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-image: url('../images/ban.png');
+    background-size: cover;
+    background-repeat: no-repeat; 
     background-position: center;
 
 
@@ -76,15 +84,10 @@ body {
 }
 
 
-
-
-
-/* Main Body Sections */
 .main-body {
   margin-top: 6vh;
   
 
-  
 }
 .paragrafo {
     font-size: 1.3em;
@@ -133,8 +136,6 @@ body {
   }
 }
 
-/* Custom Styles */
-/* Adicione seus estilos personalizados aqui */
 .topico {
   color:#ff432e;
   font-size: 1.1em;
