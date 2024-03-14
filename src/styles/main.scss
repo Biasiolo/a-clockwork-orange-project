@@ -1,36 +1,36 @@
 @font-face {
-    font-family: Timepiece;
-    src: url(../../assets/fonts/Timepiece.ttf);
-    font-weight: 400;
+  font-family: Timepiece;
+  src: url(../../assets/fonts/Timepiece.ttf);
+  font-weight: 400;
 }
 
 @font-face {
-    font-family: Futura;
-    src: url(../../assets/fonts/FUTURA55REGULAR.TTF);
-    font-weight: 400;
+  font-family: Futura;
+  src: url(../../assets/fonts/FUTURA55REGULAR.TTF);
+  font-weight: 400;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Timepiece, sans-serif;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Timepiece, sans-serif;
+  list-style: none;
 
 }
 
 body {
-    background-color: #000000;
+  background-color: #000000;
 }
 
 
 /* Hero Section */
 .hero {
-  background-image: url('../images/back5.png'); 
+  background-image: url('../images/back5.png');
   color: #ff8d00;
   text-align: center;
   padding: 100px 0;
-  background-size: contain; 
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   min-height: 70vh;
@@ -54,57 +54,59 @@ body {
 
 @media (max-width: 767px) {
   .hero {
-    background-image: url('../images/back5.png'); 
-    background-size:auto;
+    background-image: url('../images/back5.png');
+    background-size: auto;
     background-position: right;
   }
 }
 
-  .section-video {
-    position: relative;
+.section-video {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 2.4rem;
+  justify-content: center;
+  background-image: url('../images/ban.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+
+  .video-background iframe {
     width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    margin-top: 2.4rem;
-    justify-content: center;
-    background-image: url('../images/ban.png');
-    background-size: cover;
-    background-repeat: no-repeat; 
-    background-position: center;
-
-
-    .video-background iframe {
-      width: 100%;
-      height: 70vh;
-      object-fit: cover;
+    height: 70vh;
+    object-fit: cover;
   }
 }
 
 
 .main-body {
   margin-top: 6vh;
-  
+
 
 }
+
 .paragrafo {
-    font-size: 1.3em;
-    color: rgb(196, 196, 196);
-    font-family: Futura, sans-serif;
-  }
+  font-size: 1.3em;
+  color: rgb(196, 196, 196);
+  font-family: Futura, sans-serif;
+}
 
-  .titulo {
-    font-size: 3em;
-    color:#ff432e;
-  }
-  .titulo2 {
-    font-size: 2em;
-    color:#ff432e;
-  }
+.titulo {
+  font-size: 3em;
+  color: #ff432e;
+}
 
-  
+.titulo2 {
+  font-size: 2em;
+  color: #ff432e;
+}
+
+
 
 
 /* Sidebar */
@@ -113,7 +115,7 @@ body {
   padding: 20px;
   color: #131212;
 
-  
+
   h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
@@ -129,7 +131,7 @@ body {
   ul {
     list-style-type: none;
     padding-left: 0;
-  
+
     li {
       margin-left: 20px;
     }
@@ -137,8 +139,41 @@ body {
 }
 
 .topico {
-  color:#ff432e;
+  color: #ff432e;
   font-size: 1.1em;
   font-family: Futura, sans-serif;
+}
+
+.back-to-top {
+  text-align: center;
+  justify-content: center;
+
+  a {
+    text-decoration: none;
+    color: rgb(196, 196, 196);
+    font-size: 1.6rem;
+
+    &:hover {
+      transform: scale(1.1);
+      color: #ff432e;
+    }
+  }
+}
+
+footer {
+  
+  background-color: #ff432e;
+  color: #000000;
+  text-align: center;
+
+
+  p {
+    font-family: Futura, sans-serif;
+    font-size: 1.1rem;
+  }
+
+  a{
+    font-size: 1.3rem;
+  }
 }
 
